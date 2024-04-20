@@ -1,0 +1,1359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منتجات المقاطعة</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      input[placeholder]{
+          color: white;
+      }
+      @media(min-width:768px){
+    #nav{
+        position: sticky;
+        top: 0;
+        z-index: 4; 
+    }  
+    
+}
+    </style>
+</head>
+<body class="bg-dark">
+<!-- شريط الnav -->
+<header class="p-3 text-bg-dark" id="nav" style="box-shadow: 0 0 30px black;">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+          <input list="brandList" id="brands" name="brands"class="form-control form-control-dark text-bg-dark" placeholder="ابحث عن المنتج">
+          <datalist  id="brandList">
+
+            <option value="(Nescafe)نسكافيه">مقاطعة</option>
+            <option value="(Starbucks)ستاربكس">مقاطعة</option>
+            <option value="(Dairy Milk)ديري ميلك">مقاطعة</option>
+            <option value="(Lipton)شاي ليبتون">مقاطعة</option>
+            <option value="(Schweppes)شويبس">مقاطعة</option>
+            <option value="(Pepsi)بيبسي">مقاطعة</option>
+            <option value="(chips)شيبسي">مقاطعة</option>
+            <option value="(Aquafina)أكوافينا">مقاطعة</option>
+            <option value="(Nutella)نوتيلا">مقاطعة</option>
+            <option value="(cerelac)سيريلاك">مقاطعة</option>
+            <option value="(McDonald's)ماكدونالدز">مقاطعة</option>
+            <option value="(Coca-Cola)كوكاكولا">مقاطعة</option>
+            <option value="(Nesquik)نسكويك">مقاطعة</option>
+            <option value="(Kit Kat)كيت كات">مقاطعة</option>
+            <option value="(Ferrero Rocher)فيريرو روشيه">مقاطعة</option>
+            <option value="(Nestle)نستله">مقاطعة</option>
+            <option value="(Hewlett-Packard)هيوليت باكارد">مقاطعة</option>
+            <option value="(Intel)إنتل">مقاطعة</option>
+            <option value="(Motorola)موتورولا">مقاطعة</option>
+            <option value="(Siemens)سيمنز">مقاطعة</option>
+            <option value="(Nokia)نوكيا">مقاطعة</option>
+            <option value="(Rexona)ريكسونا">مقاطعة</option>
+            <option value="(HP)إتش بي">مقاطعة</option>
+            <option value="(Microsoft)مايكروسوفت">مقاطعة</option>
+            <option value="(Apple)أبل">مقاطعة</option>
+            <option value="(Google)جوجل">مقاطعة</option>
+            <option value="(Amazon)أمازون">مقاطعة</option>
+            <option value="(Facebook)فيسبوك">مقاطعة</option>
+            <option value="(Twitter)تويتر">مقاطعة</option>
+            <option value="(LinkedIn)لينكدإن">مقاطعة</option>
+            <option value="(IBM)آي بي إم">مقاطعة</option>
+            <option value="(Cisco)سيسكو">مقاطعة</option>
+            <option value="(Oracle)أوراكل">مقاطعة</option>
+            <option value="(Adobe)أدوبي">مقاطعة</option>
+            <option value="(Monsanto)مونسانتو">مقاطعة</option>
+            <option value="(Dell)ديل">مقاطعة</option>
+            <option value="(H&M)إتش آند إم">مقاطعة</option>
+            <option value="(Zara)زارا">مقاطعة</option>
+            <option value="(Burger King)برجر كينج">مقاطعة</option>
+            <option value="(KFC)كنتاكي">مقاطعة</option>
+            <option value="(doritos)دوريتس">مقاطعة</option>
+            <option value="(kiri)كيري">مقاطعة</option>
+            <option value="(Subway)سوبواي">مقاطعة</option>
+            <option value="(Pizza Hut)بيتزا هت">مقاطعة</option>
+            <option value="(Domino's Pizza)دومينوز بيتزا">مقاطعة</option>
+            <option value="(Marlboro)مارلبورو">مقاطعة</option>
+            <option value="(Wrigley's)ريجليس">مقاطعة</option>
+            <option value="(Nivea)نيفيا">مقاطعة</option>
+            <option value="(Dove)دوف">مقاطعة</option>
+            <option value="(Garnier)جارنير">مقاطعة</option>
+            <option value="(Pampers)بامبرز">مقاطعة</option>
+            <option value="(Colgate)كولجيت">مقاطعة</option>
+            <option value="(Pantene)بانتين">مقاطعة</option>
+            <option value="(Gillette)جيليت">مقاطعة</option>
+            <option value="(L'Oreal)لوريال">مقاطعة</option>
+            <option value="(Maybelline)مايبيلين">مقاطعة</option>
+            <option value="(Revlon)ريفلون">مقاطعة</option>
+            <option value="(Dior)ديور">مقاطعة</option>
+            <option value="(Chanel)شانيل">مقاطعة</option>
+            <option value="(Louis Vuitton)لويس فويتون">مقاطعة</option>
+            <option value="(Gucci)جوتشي">مقاطعة</option>
+            <option value="(Prada)برادا">مقاطعة</option>
+            <option value="(Calvin Klein)كالفن كلاين">مقاطعة</option>
+            <option value="(Dolce & Gabbana)دولتشي اند جابانا">مقاطعة</option>
+            <option value="(Versace)فيرساتشي">مقاطعة</option>
+            <option value="(Burberry)بوربري">مقاطعة</option>
+            <option value="(Tommy Hilfiger)تومي هيلفيغر">مقاطعة</option>
+            <option value="(Adidas)أديداس">مقاطعة</option>
+            <option value="(Nike)نايك">مقاطعة</option>
+            <option value="(Puma)بوما">مقاطعة</option>
+            <option value="(Reebok)ريبوك">مقاطعة</option>
+            <option value="(Under Armour)أندر أرمور">مقاطعة</option>
+            <option value="(Samsung)سامسونج">مقاطعة</option>
+            <option value="(Sony)سوني">مقاطعة</option>
+            <option value="(LG)إل جي">مقاطعة</option>
+            <option value="(Panasonic)باناسونيك">مقاطعة</option>
+            <option value="(Sharp)شارب">مقاطعة</option>
+            <option value="(Toshiba)توشيبا">مقاطعة</option>
+            <option value="(Hitachi)هيتاشي">مقاطعة</option>
+            <option value="(Western Digital)ويسترن ديجيتال">مقاطعة</option>
+            <option value="(Seagate)سيجيت">مقاطعة</option>
+            <option value="(Canon)كانون">مقاطعة</option>
+            <option value="(Nikon)نيكون">مقاطعة</option>
+            <option value="(Olympus)أوليمبوس">مقاطعة</option>
+            <option value="(Fujifilm)فوجي فيلم">مقاطعة</option>
+            <option value="(GoPro)جوبرو">مقاطعة</option>
+            <option value="(Hasselblad)هاسلبلاد">مقاطعة</option>
+            <option value="(Ricoh)ريكو">مقاطعة</option>
+            <option value="(Leica)لايكا">مقاطعة</option>
+            <option value="(Bose)بوز">مقاطعة</option>
+            <option value="(JBL)جي بي ال">مقاطعة</option>
+            <option value="(Sennheiser)سنهيسر">مقاطعة</option>
+            <option value="(Beats by Dre)بيتس باي دري">مقاطعة</option>
+            <option value="(Sony)سوني">مقاطعة</option>
+            <option value="(LG)إل جي">مقاطعة</option>
+            <option value="(Philips)فيليبس">مقاطعة</option>
+            <option value="(Sharp)شارب">مقاطعة</option>
+            <option value="(Hisense)هايسنس">مقاطعة</option>
+            <option value="(TCL)تي سي إل">مقاطعة</option>
+            <option value="(Vizio)فيزيو">مقاطعة</option>
+            <option value="(Haier)هاير">مقاطعة</option>
+            <option value="(Dyson)دايسون">مقاطعة</option>
+            <option value="(Electrolux)إلكترولوكس">مقاطعة</option>
+            <option value="(Miele)ميلي">مقاطعة</option>
+            <option value="(Kenmore)كينمور">مقاطعة</option>
+            <option value="(Whirlpool)ويرلبول">مقاطعة</option>
+            <option value="(GE)جي إي">مقاطعة</option>
+            <option value="(KitchenAid)كيتشين إيد">مقاطعة</option>
+            <option value="(Bosch)بوش">مقاطعة</option>
+            <option value="(Samsung)سامسونج">مقاطعة</option>
+            <option value="(LG)إل جي">مقاطعة</option>
+            <option value="(Sony)سوني">مقاطعة</option>
+            <option value="(Panasonic)باناسونيك">مقاطعة</option>
+            <option value="(Sharp)شارب">مقاطعة</option>
+            <option value="(Toshiba)توشيبا">مقاطعة</option>
+            <option value="(Hitachi)هيتاشي">مقاطعة</option>
+            <option value="(Western Digital)ويسترن ديجيتال">مقاطعة</option>
+            <option value="(Seagate)سيجيت">مقاطعة</option>
+            <option value="(Nintendo)نينتندو">مقاطعة</option>
+            <option value="(Sony PlayStation)سوني بلايستيشن">مقاطعة</option>
+            <option value="(Microsoft Xbox)مايكروسوفت إكس بوكس">مقاطعة</option>
+            <option value="(ASUS)أسوس">مقاطعة</option>
+            <option value="(MSI)أم إس آي">مقاطعة</option>
+            <option value="(Gigabyte)جيجابايت">مقاطعة</option>
+            <option value="(EVGA)إي في جي إيه">مقاطعة</option>
+            <option value="(ZOTAC)زوتاك">مقاطعة</option>
+            <option value="(Galax)جالاكس">مقاطعة</option>
+            <option value="(Corsair)كورسير">مقاطعة</option>
+            <option value="(NZXT)إن زد إكس تي">مقاطعة</option>
+            <option value="(Cooler Master)كولر ماستر">مقاطعة</option>
+            <option value="(Thermaltake)ثيرمالتيك">مقاطعة</option>
+            <option value="(Fractal Design)فراكتال ديزاين">مقاطعة</option>
+            <option value="(Deepcool)ديب كول">مقاطعة</option>
+            <option value="(Antec)أنتيك">مقاطعة</option>
+            <option value="(BitFenix)بيت فينكس">مقاطعة</option>
+            <option value="(Be Quiet!)بي كوايت">مقاطعة</option>
+            <option value="(XFX)إكس إف إكس">مقاطعة</option>
+            <option value="(Sapphire)سافير">مقاطعة</option>
+            <option value="(PowerColor)باور كولور">مقاطعة</option>
+            <option value="(Club 3D)كلوب ثري دي">مقاطعة</option>
+            <option value="(ASRock)أس روك">مقاطعة</option>
+            <option value="(Biostar)بيوستار">مقاطعة</option>
+            <option value="(Colorful)كولرفول">مقاطعة</option>
+            <option value="(Zebra)زيبرا">مقاطعة</option>
+            <option value="(HP Inc.)إتش بي إنك">مقاطعة</option>
+            <option value="(Alcatel)ألكاتيل">مقاطعة</option>
+            <option value="(Acer)أيسر">مقاطعة</option>
+            <option value="(Toshiba)توشيبا">مقاطعة</option>
+            <option value="(Asus)أسوس">مقاطعة</option>
+            <option value="(Gigabyte)جيجابايت">مقاطعة</option>
+            <option value="(MSI)إم إس أي">مقاطعة</option>
+            <option value="(Samsung)سامسونج">مقاطعة</option>
+            <option value="(LG Electronics)إل جي الكترونيكس">مقاطعة</option>
+            <option value="(Sony)سوني">مقاطعة</option>
+            <option value="(HTC)إتش تي سي">مقاطعة</option>
+            <option value="(Huawei)هواوي">مقاطعة</option>
+            <option value="(OnePlus)وان بلس">مقاطعة</option>
+            <option value="(Xiaomi)شاومي">مقاطعة</option>
+            <option value="(Realme)ريلمي">مقاطعة</option>
+            <option value="(Oppo)أوبو">مقاطعة</option>
+            <option value="(Vivo)فيفو">مقاطعة</option>
+            <option value="(TCL Corporation)تي سي إل كوربوريشن">مقاطعة</option>
+            <option value="(Lenovo)لينوفو">مقاطعة</option>
+            <option value="(ZTE)زي تي إي">مقاطعة</option>
+            <option value="(Meizu)مايزو">مقاطعة</option>
+            <option value="(Motorola)موتورولا">مقاطعة</option>
+            <option value="(BlackBerry)بلاك بيري">مقاطعة</option>
+            <option value="(Nokia)نوكيا">مقاطعة</option>
+            <option value="(Google Pixel)جوجل بيكسل">مقاطعة</option>
+            <option value="(Pixel XL)بيكسل إكس إل">مقاطعة</option>
+            <option value="(Pixel 2)بيكسل 2">مقاطعة</option>
+            <option value="(Pixel 2 XL)بيكسل 2 إكس إل">مقاطعة</option>
+            <option value="(Pixel 3)بيكسل 3">مقاطعة</option>
+            <option value="(Pixel 3 XL)بيكسل 3 إكس إل">مقاطعة</option>
+            <option value="(Pixel 3a)بيكسل 3 أ">مقاطعة</option>
+            <option value="(Pixel 3a XL)بيكسل 3 أ إكس إل">مقاطعة</option>
+            <option value="(Pixel 4)بيكسل 4">مقاطعة</option>
+            <option value="(Pixel 4 XL)بيكسل 4 إكس إل">مقاطعة</option>
+            <option value="(Pixel 4a)بيكسل 4 أ">مقاطعة</option>
+            <option value="(Pixel 4a 5G)بيكسل 4 أ 5 جي">مقاطعة</option>
+            <option value="(Pixel 5)بيكسل 5">مقاطعة</option>
+            <option value="(Pixel 6)بيكسل 6">مقاطعة</option>
+            <option value="(Pixel 6 Pro)بيكسل 6 برو">مقاطعة</option>
+            <option value="(Pixel 6a)بيكسل 6 أ">مقاطعة</option>
+            <option value="(Pixel 6a Pro)بيكسل 6 أ برو">مقاطعة</option>
+            <option value="(Pixel Watch)بيكسل ووتش">مقاطعة</option>
+            <option value="(Pixel Buds)بيكسل بادز">مقاطعة</option>
+            <option value="(Pixelbook)بيكسل بوك">مقاطعة</option>
+            <option value="(Pixel Slate)بيكسل سلات">مقاطعة</option>
+            <option value="(Chromebook Pixel)كروم بوك بيكسل">مقاطعة</option>
+            <option value="(Google Nest Hub)جوجل نست هاب">مقاطعة</option>
+            <option value="(Google Nest Hub Max)جوجل نست هاب ماكس">مقاطعة</option>
+            <option value="(Google Home)جوجل هوم">مقاطعة</option>
+            <option value="(Google Home Mini)جوجل هوم ميني">مقاطعة</option>
+            <option value="(Google Home Max)جوجل هوم ماكس">مقاطعة</option>
+            <option value="(Google Wifi)جوجل واي فاي">مقاطعة</option>
+            <option value="(Nest Thermostat)نست تيرموستات">مقاطعة</option>
+            <option value="(Nest Cam)نست كام">مقاطعة</option>
+            <option value="(Nest Hello)نست هيلو">مقاطعة</option>
+            <option value="(Nest Protect)نست بروتكت">مقاطعة</option>
+            <option value="(Nest Secure)نست سكيور">مقاطعة</option>
+            <option value="(Nest Wifi)نست واي فاي">مقاطعة</option>
+            <option value="(Nest Audio)نست أوديو">مقاطعة</option>
+            <option value="(Nest Mini)نست ميني">مقاطعة</option>
+            <option value="(Google Pixelbook)جوجل بيكسل بوك">مقاطعة</option>
+            <option value="(Pixelbook Go)بيكسل بوك جو">مقاطعة</option>
+            <option value="(Pixel C)بيكسل سي">مقاطعة</option>
+            <option value="(Chromecast)كروم كاست">مقاطعة</option>
+            <option value="(Chromecast Ultra)كروم كاست ألترا">مقاطعة</option>
+            <option value="(Nexus Player)نيكسوس بلاير">مقاطعة</option>
+            <option value="(Stadia)ستاديا">مقاطعة</option>
+            <option value="(Daydream View)ديدريم فيو">مقاطعة</option>
+            <option value="(Google Cardboard)جوجل كاردبورد">مقاطعة</option>
+            <option value="(Nest Audio)نست أوديو">مقاطعة</option>
+            <option value="(Nest Mini)نست ميني">مقاطعة</option>
+            <option value="(Pixel Buds)بيكسل بادز">مقاطعة</option>
+            <option value="(Pixel Stand)بيكسل ستاند">مقاطعة</option>
+            <option value="(Stadia Controller)ستاديا كونترولر">مقاطعة</option>
+            <option value="(Google WiFi)جوجل واي فاي">مقاطعة</option>
+            <option value="(Nest Wifi)نست واي فاي">مقاطعة</option>
+            <option value="(Google Fiber)جوجل فيبر">مقاطعة</option>
+            <option value="(Google Nest)جوجل نست">مقاطعة</option>
+            <option value="(Project Fi)بروجكت في">مقاطعة</option>
+            <option value="(Google Fi)جوجل في">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتكس">مقاطعة</option>
+            <option value="(Google AdSense)جوجل أدسنس">مقاطعة</option>
+            <option value="(Google AdWords)جوجل أدووردز">مقاطعة</option>
+            <option value="(Google Ads)جوجل أدز">مقاطعة</option>
+            <option value="(Google Drive)جوجل درايف">مقاطعة</option>
+            <option value="(Google Docs)جوجل دوكس">مقاطعة</option>
+            <option value="(Google Sheets)جوجل شيتس">مقاطعة</option>
+            <option value="(Google Slides)جوجل سلايدز">مقاطعة</option>
+            <option value="(Google Keep)جوجل كيب">مقاطعة</option>
+            <option value="(Google Photos)جوجل فوتوس">مقاطعة</option>
+            <option value="(Google Maps)جوجل مابس">مقاطعة</option>
+            <option value="(Google Earth)جوجل إيرث">مقاطعة</option>
+            <option value="(Google Translate)جوجل ترانسليت">مقاطعة</option>
+            <option value="(Google Chrome)جوجل كروم">مقاطعة</option>
+            <option value="(Google Chrome OS)جوجل كروم أو أس">مقاطعة</option>
+            <option value="(Gmail)جيميل">مقاطعة</option>
+            <option value="(YouTube)يوتيوب">مقاطعة</option>
+            <option value="(Google Video)جوجل فيديو">مقاطعة</option>
+            <option value="(Google Hangouts)جوجل هانج أوتس">مقاطعة</option>
+            <option value="(Google Meet)جوجل ميت">مقاطعة</option>
+            <option value="(Google Duo)جوجل دوو">مقاطعة</option>
+            <option value="(Google Voice)جوجل فويس">مقاطعة</option>
+            <option value="(Google Chat)جوجل شات">مقاطعة</option>
+            <option value="(Google Allo)جوجل ألو">مقاطعة</option>
+            <option value="(Google Messages)جوجل ميساجز">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Cloud)جوجل كلاود">مقاطعة</option>
+            <option value="(Firebase)فايربيس">مقاطعة</option>
+            <option value="(Google Workspace)جوجل ووركسبيس">مقاطعة</option>
+            <option value="(Google Ad Manager)جوجل أد مانجر">مقاطعة</option>
+            <option value="(Google Marketing Platform)جوجل ماركتنج بلاتفورم">مقاطعة</option>
+            <option value="(Google Ads Manager)جوجل أدس مانجر">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google Tag Manager)جوجل تاج مانجر">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Registry)جوجل ريجستري">مقاطعة</option>
+            <option value="(Google Sites)جوجل سايتس">مقاطعة</option>
+            <option value="(Blogger)بلوجر">مقاطعة</option>
+            <option value="(Google Arts & Culture)جوجل آرتس أند كالتشر">مقاطعة</option>
+            <option value="(Google Arts)جوجل آرتس">مقاطعة</option>
+            <option value="(Google Culture)جوجل كالتشر">مقاطعة</option>
+            <option value="(Google Books)جوجل بوكس">مقاطعة</option>
+            <option value="(Google News)جوجل نيوز">مقاطعة</option>
+            <option value="(Google News & Weather)جوجل نيوز أند ويذر">مقاطعة</option>
+            <option value="(Google Weather)جوجل ويذر">مقاطعة</option>
+            <option value="(Google Finance)جوجل فاينانس">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Express)جوجل إكسبريس">مقاطعة</option>
+            <option value="(Google Store)جوجل ستور">مقاطعة</option>
+            <option value="(Google Pay Send)جوجل بي سند">مقاطعة</option>
+            <option value="(Google Search)جوجل سيرش">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Flights)جوجل فلايتس">مقاطعة</option>
+            <option value="(Google Hotel Search)جوجل هوتل سيرش">مقاطعة</option>
+            <option value="(Google Trips)جوجل تريبس">مقاطعة</option>
+            <option value="(Google My Business)جوجل ماي بزنس">مقاطعة</option>
+            <option value="(Google Cloud Platform)جوجل كلاود بلاتفورم">مقاطعة</option>
+            <option value="(Google Developers)جوجل ديفلوبرز">مقاطعة</option>
+            <option value="(Google Play)جوجل بلاي">مقاطعة</option>
+            <option value="(Google Play Books)جوجل بلاي بوكس">مقاطعة</option>
+            <option value="(Google Play Games)جوجل بلاي جيمز">مقاطعة</option>
+            <option value="(Google Play Movies & TV)جوجل بلاي موفيز أند تي في">مقاطعة</option>
+            <option value="(Google Play Music)جوجل بلاي ميوزيك">مقاطعة</option>
+            <option value="(Google Play Newsstand)جوجل بلاي نيوزستاند">مقاطعة</option>
+            <option value="(Google Workspace Marketplace)جوجل ووركسبيس ماركتبليس">مقاطعة</option>
+            <option value="(Google Cloud Marketplace)جوجل كلاود ماركتبليس">مقاطعة</option>
+            <option value="(Google Play Protect)جوجل بلاي بروتيكت">مقاطعة</option>
+            <option value="(Google Fit)جوجل فيت">مقاطعة</option>
+            <option value="(Google Lens)جوجل لينس">مقاطعة</option>
+            <option value="(Google Home)جوجل هوم">مقاطعة</option>
+            <option value="(Google Home Mini)جوجل هوم ميني">مقاطعة</option>
+            <option value="(Google Home Max)جوجل هوم ماكس">مقاطعة</option>
+            <option value="(Google Nest Hub)جوجل نست هاب">مقاطعة</option>
+            <option value="(Google Nest Hub Max)جوجل نست هاب ماكس">مقاطعة</option>
+            <option value="(Google Clips)جوجل كليبس">مقاطعة</option>
+            <option value="(Google Pixel)جوجل بيكسل">مقاطعة</option>
+            <option value="(Google Pixel 2)جوجل بيكسل 2">مقاطعة</option>
+            <option value="(Google Pixel 2 XL)جوجل بيكسل 2 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 3)جوجل بيكسل 3">مقاطعة</option>
+            <option value="(Google Pixel 3 XL)جوجل بيكسل 3 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 3a)جوجل بيكسل 3 أ">مقاطعة</option>
+            <option value="(Google Pixel 3a XL)جوجل بيكسل 3 أ إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 4)جوجل بيكسل 4">مقاطعة</option>
+            <option value="(Google Pixel 4 XL)جوجل بيكسل 4 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 4a)جوجل بيكسل 4 أ">مقاطعة</option>
+            <option value="(Google Pixel 4a 5G)جوجل بيكسل 4 أ 5 جي">مقاطعة</option>
+            <option value="(Google Pixel 5)جوجل بيكسل 5">مقاطعة</option>
+            <option value="(Google Pixel 6)جوجل بيكسل 6">مقاطعة</option>
+            <option value="(Google Pixel 6 Pro)جوجل بيكسل 6 برو">مقاطعة</option>
+            <option value="(Google Pixel 6a)جوجل بيكسل 6 أ">مقاطعة</option>
+            <option value="(Google Pixel 6a Pro)جوجل بيكسل 6 أ برو">مقاطعة</option>
+            <option value="(Google Pixel Watch)جوجل بيكسل ووتش">مقاطعة</option>
+            <option value="(Google Pixel Buds)جوجل بيكسل بادز">مقاطعة</option>
+            <option value="(Google Pixelbook)جوجل بيكسل بوك">مقاطعة</option>
+            <option value="(Google Pixel Slate)جوجل بيكسل سلات">مقاطعة</option>
+            <option value="(Google Chromebook Pixel)جوجل كروم بوك بيكسل">مقاطعة</option>
+            <option value="(Google Nest Audio)جوجل نست أوديو">مقاطعة</option>
+            <option value="(Google Nest Mini)جوجل نست ميني">مقاطعة</option>
+            <option value="(Google Pixel Buds)جوجل بيكسل بادز">مقاطعة</option>
+            <option value="(Google Pixel Stand)جوجل بيكسل ستاند">مقاطعة</option>
+            <option value="(Google Stadia Controller)جوجل ستاديا كونترولر">مقاطعة</option>
+            <option value="(Google WiFi)جوجل واي فاي">مقاطعة</option>
+            <option value="(Google Nest Wifi)جوجل نست واي فاي">مقاطعة</option>
+            <option value="(Google Fiber)جوجل فيبر">مقاطعة</option>
+            <option value="(Google Nest)جوجل نست">مقاطعة</option>
+            <option value="(Google Project Fi)جوجل بروجكت في">مقاطعة</option>
+            <option value="(Google Fi)جوجل في">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google AdSense)جوجل أدسنس">مقاطعة</option>
+            <option value="(Google AdWords)جوجل أدووردز">مقاطعة</option>
+            <option value="(Google Ads)جوجل أدز">مقاطعة</option>
+            <option value="(Google Drive)جوجل درايف">مقاطعة</option>
+            <option value="(Google Docs)جوجل دوكس">مقاطعة</option>
+            <option value="(Google Sheets)جوجل شيتس">مقاطعة</option>
+            <option value="(Google Slides)جوجل سلايدز">مقاطعة</option>
+            <option value="(Google Keep)جوجل كيب">مقاطعة</option>
+            <option value="(Google Photos)جوجل فوتوس">مقاطعة</option>
+            <option value="(Google Maps)جوجل مابس">مقاطعة</option>
+            <option value="(Google Earth)جوجل إيرث">مقاطعة</option>
+            <option value="(Google Translate)جوجل ترانسليت">مقاطعة</option>
+            <option value="(Google Chrome)جوجل كروم">مقاطعة</option>
+            <option value="(Google Chrome OS)جوجل كروم أو أس">مقاطعة</option>
+            <option value="(Gmail)جيميل">مقاطعة</option>
+            <option value="(YouTube)يوتيوب">مقاطعة</option>
+            <option value="(Google Video)جوجل فيديو">مقاطعة</option>
+            <option value="(Google Hangouts)جوجل هانج أوتس">مقاطعة</option>
+            <option value="(Google Meet)جوجل ميت">مقاطعة</option>
+            <option value="(Google Duo)جوجل دوو">مقاطعة</option>
+            <option value="(Google Voice)جوجل فويس">مقاطعة</option>
+            <option value="(Google Chat)جوجل شات">مقاطعة</option>
+            <option value="(Google Allo)جوجل ألو">مقاطعة</option>
+            <option value="(Google Messages)جوجل ميساجز">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Cloud)جوجل كلاود">مقاطعة</option>
+            <option value="(Firebase)فايربيس">مقاطعة</option>
+            <option value="(Google Workspace)جوجل ووركسبيس">مقاطعة</option>
+            <option value="(Google Ad Manager)جوجل أد مانجر">مقاطعة</option>
+            <option value="(Google Marketing Platform)جوجل ماركتنج بلاتفورم">مقاطعة</option>
+            <option value="(Google Ads Manager)جوجل أدس مانجر">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google Tag Manager)جوجل تاج مانجر">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Registry)جوجل ريجستري">مقاطعة</option>
+            <option value="(Google Sites)جوجل سايتس">مقاطعة</option>
+            <option value="(Blogger)بلوجر">مقاطعة</option>
+            <option value="(Google Arts & Culture)جوجل آرتس أند كالتشر">مقاطعة</option>
+            <option value="(Google Arts)جوجل آرتس">مقاطعة</option>
+            <option value="(Google Culture)جوجل كالتشر">مقاطعة</option>
+            <option value="(Google Books)جوجل بوكس">مقاطعة</option>
+            <option value="(Google News)جوجل نيوز">مقاطعة</option>
+            <option value="(Google News & Weather)جوجل نيوز أند ويذر">مقاطعة</option>
+            <option value="(Google Weather)جوجل ويذر">مقاطعة</option>
+            <option value="(Google Finance)جوجل فاينانس">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Express)جوجل إكسبريس">مقاطعة</option>
+            <option value="(Google Store)جوجل ستور">مقاطعة</option>
+            <option value="(Google Pay Send)جوجل بي سند">مقاطعة</option>
+            <option value="(Google Search)جوجل سيرش">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Flights)جوجل فلايتس">مقاطعة</option>
+            <option value="(Google Hotel Search)جوجل هوتل سيرش">مقاطعة</option>
+            <option value="(Google Trips)جوجل تريبس">مقاطعة</option>
+            <option value="(Google My Business)جوجل ماي بزنس">مقاطعة</option>
+            <option value="(Google Cloud Platform)جوجل كلاود بلاتفورم">مقاطعة</option>
+            <option value="(Google Developers)جوجل ديفلوبرز">مقاطعة</option>
+            <option value="(Google Play)جوجل بلاي">مقاطعة</option>
+            <option value="(Google Play Books)جوجل بلاي بوكس">مقاطعة</option>
+            <option value="(Google Play Games)جوجل بلاي جيمز">مقاطعة</option>
+            <option value="(Google Play Movies & TV)جوجل بلاي موفيز أند تي في">مقاطعة</option>
+            <option value="(Google Play Music)جوجل بلاي ميوزيك">مقاطعة</option>
+            <option value="(Google Play Newsstand)جوجل بلاي نيوزستاند">مقاطعة</option>
+            <option value="(Google Workspace Marketplace)جوجل ووركسبيس ماركتبليس">مقاطعة</option>
+            <option value="(Google Cloud Marketplace)جوجل كلاود ماركتبليس">مقاطعة</option>
+            <option value="(Google Play Protect)جوجل بلاي بروتيكت">مقاطعة</option>
+            <option value="(Google Fit)جوجل فيت">مقاطعة</option>
+            <option value="(Google Lens)جوجل لينس">مقاطعة</option>
+            <option value="(Google Home)جوجل هوم">مقاطعة</option>
+            <option value="(Google Home Mini)جوجل هوم ميني">مقاطعة</option>
+            <option value="(Google Home Max)جوجل هوم ماكس">مقاطعة</option>
+            <option value="(Google Nest Hub)جوجل نست هاب">مقاطعة</option>
+            <option value="(Google Nest Hub Max)جوجل نست هاب ماكس">مقاطعة</option>
+            <option value="(Google Clips)جوجل كليبس">مقاطعة</option>
+            <option value="(Google Pixel)جوجل بيكسل">مقاطعة</option>
+            <option value="(Google Pixel 2)جوجل بيكسل 2">مقاطعة</option>
+            <option value="(Google Pixel 2 XL)جوجل بيكسل 2 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 3)جوجل بيكسل 3">مقاطعة</option>
+            <option value="(Google Pixel 3 XL)جوجل بيكسل 3 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 3a)جوجل بيكسل 3 أ">مقاطعة</option>
+            <option value="(Google Pixel 3a XL)جوجل بيكسل 3 أ إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 4)جوجل بيكسل 4">مقاطعة</option>
+            <option value="(Google Pixel 4 XL)جوجل بيكسل 4 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 4a)جوجل بيكسل 4 أ">مقاطعة</option>
+            <option value="(Google Pixel 4a 5G)جوجل بيكسل 4 أ 5 جي">مقاطعة</option>
+            <option value="(Google Pixel 5)جوجل بيكسل 5">مقاطعة</option>
+            <option value="(Google Pixel 6)جوجل بيكسل 6">مقاطعة</option>
+            <option value="(Google Pixel 6 Pro)جوجل بيكسل 6 برو">مقاطعة</option>
+            <option value="(Google Pixel 6a)جوجل بيكسل 6 أ">مقاطعة</option>
+            <option value="(Google Pixel 6a Pro)جوجل بيكسل 6 أ برو">مقاطعة</option>
+            <option value="(Google Pixel Watch)جوجل بيكسل ووتش">مقاطعة</option>
+            <option value="(Google Pixel Buds)جوجل بيكسل بادز">مقاطعة</option>
+            <option value="(Google Pixelbook)جوجل بيكسل بوك">مقاطعة</option>
+            <option value="(Google Pixel Slate)جوجل بيكسل سلات">مقاطعة</option>
+            <option value="(Google Chromebook Pixel)جوجل كروم بوك بيكسل">مقاطعة</option>
+            <option value="(Google Nest Audio)جوجل نست أوديو">مقاطعة</option>
+            <option value="(Google Nest Mini)جوجل نست ميني">مقاطعة</option>
+            <option value="(Google Pixel Buds)جوجل بيكسل بادز">مقاطعة</option>
+            <option value="(Google Pixel Stand)جوجل بيكسل ستاند">مقاطعة</option>
+            <option value="(Google Stadia Controller)جوجل ستاديا كونترولر">مقاطعة</option>
+            <option value="(Google WiFi)جوجل واي فاي">مقاطعة</option>
+            <option value="(Google Nest Wifi)جوجل نست واي فاي">مقاطعة</option>
+            <option value="(Google Fiber)جوجل فيبر">مقاطعة</option>
+            <option value="(Google Nest)جوجل نست">مقاطعة</option>
+            <option value="(Google Project Fi)جوجل بروجكت في">مقاطعة</option>
+            <option value="(Google Fi)جوجل في">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google AdSense)جوجل أدسنس">مقاطعة</option>
+            <option value="(Google AdWords)جوجل أدووردز">مقاطعة</option>
+            <option value="(Google Ads)جوجل أدز">مقاطعة</option>
+            <option value="(Google Drive)جوجل درايف">مقاطعة</option>
+            <option value="(Google Docs)جوجل دوكس">مقاطعة</option>
+            <option value="(Google Sheets)جوجل شيتس">مقاطعة</option>
+            <option value="(Google Slides)جوجل سلايدز">مقاطعة</option>
+            <option value="(Google Keep)جوجل كيب">مقاطعة</option>
+            <option value="(Google Photos)جوجل فوتوس">مقاطعة</option>
+            <option value="(Google Maps)جوجل مابس">مقاطعة</option>
+            <option value="(Google Earth)جوجل إيرث">مقاطعة</option>
+            <option value="(Google Translate)جوجل ترانسليت">مقاطعة</option>
+            <option value="(Google Chrome)جوجل كروم">مقاطعة</option>
+            <option value="(Google Chrome OS)جوجل كروم أو أس">مقاطعة</option>
+            <option value="(Gmail)جيميل">مقاطعة</option>
+            <option value="(YouTube)يوتيوب">مقاطعة</option>
+            <option value="(Google Video)جوجل فيديو">مقاطعة</option>
+            <option value="(Google Hangouts)جوجل هانج أوتس">مقاطعة</option>
+            <option value="(Google Meet)جوجل ميت">مقاطعة</option>
+            <option value="(Google Duo)جوجل دوو">مقاطعة</option>
+            <option value="(Google Voice)جوجل فويس">مقاطعة</option>
+            <option value="(Google Chat)جوجل شات">مقاطعة</option>
+            <option value="(Google Allo)جوجل ألو">مقاطعة</option>
+            <option value="(Google Messages)جوجل ميساجز">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Cloud)جوجل كلاود">مقاطعة</option>
+            <option value="(Firebase)فايربيس">مقاطعة</option>
+            <option value="(Google Workspace)جوجل ووركسبيس">مقاطعة</option>
+            <option value="(Google Ad Manager)جوجل أد مانجر">مقاطعة</option>
+            <option value="(Google Marketing Platform)جوجل ماركتنج بلاتفورم">مقاطعة</option>
+            <option value="(Google Ads Manager)جوجل أدس مانجر">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google Tag Manager)جوجل تاج مانجر">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Registry)جوجل ريجستري">مقاطعة</option>
+            <option value="(Google Sites)جوجل سايتس">مقاطعة</option>
+            <option value="(Blogger)بلوجر">مقاطعة</option>
+            <option value="(Google Arts & Culture)جوجل آرتس أند كالتشر">مقاطعة</option>
+            <option value="(Google Arts)جوجل آرتس">مقاطعة</option>
+            <option value="(Google Culture)جوجل كالتشر">مقاطعة</option>
+            <option value="(Google Books)جوجل بوكس">مقاطعة</option>
+            <option value="(Google News)جوجل نيوز">مقاطعة</option>
+            <option value="(Google News & Weather)جوجل نيوز أند ويذر">مقاطعة</option>
+            <option value="(Google Weather)جوجل ويذر">مقاطعة</option>
+            <option value="(Google Finance)جوجل فاينانس">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Express)جوجل إكسبريس">مقاطعة</option>
+            <option value="(Google Store)جوجل ستور">مقاطعة</option>
+            <option value="(Google Pay Send)جوجل بي سند">مقاطعة</option>
+            <option value="(Google Search)جوجل سيرش">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Flights)جوجل فلايتس">مقاطعة</option>
+            <option value="(Google Hotel Search)جوجل هوتل سيرش">مقاطعة</option>
+            <option value="(Google Trips)جوجل تريبس">مقاطعة</option>
+            <option value="(Google My Business)جوجل ماي بزنس">مقاطعة</option>
+            <option value="(Google Cloud Platform)جوجل كلاود بلاتفورم">مقاطعة</option>
+            <option value="(Google Developers)جوجل ديفلوبرز">مقاطعة</option>
+            <option value="(Google Play)جوجل بلاي">مقاطعة</option>
+            <option value="(Google Play Books)جوجل بلاي بوكس">مقاطعة</option>
+            <option value="(Google Play Games)جوجل بلاي جيمز">مقاطعة</option>
+            <option value="(Google Play Movies & TV)جوجل بلاي موفيز أند تي في">مقاطعة</option>
+            <option value="(Google Play Music)جوجل بلاي ميوزيك">مقاطعة</option>
+            <option value="(Google Play Newsstand)جوجل بلاي نيوزستاند">مقاطعة</option>
+            <option value="(Google Workspace Marketplace)جوجل ووركسبيس ماركتبليس">مقاطعة</option>
+            <option value="(Google Cloud Marketplace)جوجل كلاود ماركتبليس">مقاطعة</option>
+            <option value="(Google Play Protect)جوجل بلاي بروتيكت">مقاطعة</option>
+            <option value="(Google Fit)جوجل فيت">مقاطعة</option>
+            <option value="(Clorets)كلورتس ">مقاطعة</option>
+            <option value="(Google Lens)جوجل لينس">مقاطعة</option>
+            <option value="(Google Home)جوجل هوم">مقاطعة</option>
+            <option value="(Google Home Mini)جوجل هوم ميني">مقاطعة</option>
+            <option value="(Google Home Max)جوجل هوم ماكس">مقاطعة</option>
+            <option value="(Google Nest Hub)جوجل نست هاب">مقاطعة</option>
+            <option value="(Google Nest Hub Max)جوجل نست هاب ماكس">مقاطعة</option>
+            <option value="(Google Clips)جوجل كليبس">مقاطعة</option>
+            <option value="(Google Pixel)جوجل بيكسل">مقاطعة</option>
+            <option value="(Google Pixel 2)جوجل بيكسل 2">مقاطعة</option>
+            <option value="(Google Pixel 2 XL)جوجل بيكسل 2 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 3)جوجل بيكسل 3">مقاطعة</option>
+            <option value="(Google Pixel 3 XL)جوجل بيكسل 3 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 3a)جوجل بيكسل 3 أ">مقاطعة</option>
+            <option value="(Google Pixel 3a XL)جوجل بيكسل 3 أ إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 4)جوجل بيكسل 4">مقاطعة</option>
+            <option value="(Google Pixel 4 XL)جوجل بيكسل 4 إكس إل">مقاطعة</option>
+            <option value="(Google Pixel 4a)جوجل بيكسل 4 أ">مقاطعة</option>
+            <option value="(Google Pixel 4a 5G)جوجل بيكسل 4 أ 5 جي">مقاطعة</option>
+            <option value="(Google Pixel 5)جوجل بيكسل 5">مقاطعة</option>
+            <option value="(Google Pixel 6)جوجل بيكسل 6">مقاطعة</option>
+            <option value="(Google Pixel 6 Pro)جوجل بيكسل 6 برو">مقاطعة</option>
+            <option value="(Google Pixel 6a)جوجل بيكسل 6 أ">مقاطعة</option>
+            <option value="(Google Pixel 6a Pro)جوجل بيكسل 6 أ برو">مقاطعة</option>
+            <option value="(Google Pixel Watch)جوجل بيكسل ووتش">مقاطعة</option>
+            <option value="(Google Pixel Buds)جوجل بيكسل بادز">مقاطعة</option>
+            <option value="(Google Pixelbook)جوجل بيكسل بوك">مقاطعة</option>
+            <option value="(Google Pixel Slate)جوجل بيكسل سلات">مقاطعة</option>
+            <option value="(Google Chromebook Pixel)جوجل كروم بوك بيكسل">مقاطعة</option>
+            <option value="(Google Nest Audio)جوجل نست أوديو">مقاطعة</option>
+            <option value="(Google Nest Mini)جوجل نست ميني">مقاطعة</option>
+            <option value="(Google Pixel Buds)جوجل بيكسل بادز">مقاطعة</option>
+            <option value="(Google Pixel Stand)جوجل بيكسل ستاند">مقاطعة</option>
+            <option value="(Google Stadia Controller)جوجل ستاديا كونترولر">مقاطعة</option>
+            <option value="(Google WiFi)جوجل واي فاي">مقاطعة</option>
+            <option value="(Google Nest Wifi)جوجل نست واي فاي">مقاطعة</option>
+            <option value="(Google Fiber)جوجل فيبر">مقاطعة</option>
+            <option value="(Google Nest)جوجل نست">مقاطعة</option>
+            <option value="(Google Project Fi)جوجل بروجكت في">مقاطعة</option>
+            <option value="(Google Fi)جوجل في">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google AdSense)جوجل أدسنس">مقاطعة</option>
+            <option value="(Google AdWords)جوجل أدووردز">مقاطعة</option>
+            <option value="(Google Ads)جوجل أدز">مقاطعة</option>
+            <option value="(Google Drive)جوجل درايف">مقاطعة</option>
+            <option value="(Google Docs)جوجل دوكس">مقاطعة</option>
+            <option value="(Google Sheets)جوجل شيتس">مقاطعة</option>
+            <option value="(Google Slides)جوجل سلايدز">مقاطعة</option>
+            <option value="(Google Keep)جوجل كيب">مقاطعة</option>
+            <option value="(Google Photos)جوجل فوتوس">مقاطعة</option>
+            <option value="(Google Maps)جوجل مابس">مقاطعة</option>
+            <option value="(Google Earth)جوجل إيرث">مقاطعة</option>
+            <option value="(Google Ads)جوجل أدز">مقاطعة</option>
+            <option value="(Google Drive)جوجل درايف">مقاطعة</option>
+            <option value="(Google Docs)جوجل دوكس">مقاطعة</option>
+            <option value="(Google Sheets)جوجل شيتس">مقاطعة</option>
+            <option value="(Google Slides)جوجل سلايدز">مقاطعة</option>
+            <option value="(Google Keep)جوجل كيب">مقاطعة</option>
+            <option value="(Google Photos)جوجل فوتوس">مقاطعة</option>
+            <option value="(Google Maps)جوجل مابس">مقاطعة</option>
+            <option value="(Google Earth)جوجل إيرث">مقاطعة</option>
+            <option value="(Google Translate)جوجل ترانسليت">مقاطعة</option>
+            <option value="(Google Chrome)جوجل كروم">مقاطعة</option>
+            <option value="(Google Chrome OS)جوجل كروم أو أس">مقاطعة</option>
+            <option value="(Gmail)جيميل">مقاطعة</option>
+            <option value="(YouTube)يوتيوب">مقاطعة</option>
+            <option value="(Google Video)جوجل فيديو">مقاطعة</option>
+            <option value="(Google Hangouts)جوجل هانج أوتس">مقاطعة</option>
+            <option value="(Google Meet)جوجل ميت">مقاطعة</option>
+            <option value="(Google Duo)جوجل دوو">مقاطعة</option>
+            <option value="(Google Voice)جوجل فويس">مقاطعة</option>
+            <option value="(Google Chat)جوجل شات">مقاطعة</option>
+            <option value="(Google Allo)جوجل ألو">مقاطعة</option>
+            <option value="(Google Messages)جوجل ميساجز">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Cloud)جوجل كلاود">مقاطعة</option>
+            <option value="(Firebase)فايربيس">مقاطعة</option>
+            <option value="(Google Workspace)جوجل ووركسبيس">مقاطعة</option>
+            <option value="(Google Ad Manager)جوجل أد مانجر">مقاطعة</option>
+            <option value="(Google Marketing Platform)جوجل ماركتنج بلاتفورم">مقاطعة</option>
+            <option value="(Google Ads Manager)جوجل أدس مانجر">مقاطعة</option>
+            <option value="(Google Analytics)جوجل أناليتيكس">مقاطعة</option>
+            <option value="(Google Tag Manager)جوجل تاج مانجر">مقاطعة</option>
+            <option value="(Google Domains)جوجل دومينز">مقاطعة</option>
+            <option value="(Google Registry)جوجل ريجستري">مقاطعة</option>
+            <option value="(Google Sites)جوجل سايتس">مقاطعة</option>
+            <option value="(Blogger)بلوجر">مقاطعة</option>
+            <option value="(Google Arts & Culture)جوجل آرتس أند كالتشر">مقاطعة</option>
+            <option value="(Google Arts)جوجل آرتس">مقاطعة</option>
+            <option value="(Google Culture)جوجل كالتشر">مقاطعة</option>
+            <option value="(Google Books)جوجل بوكس">مقاطعة</option>
+            <option value="(Google News)جوجل نيوز">مقاطعة</option>
+            <option value="(Google News & Weather)جوجل نيوز أند ويذر">مقاطعة</option>
+            <option value="(Google Weather)جوجل ويذر">مقاطعة</option>
+            <option value="(Google Finance)جوجل فاينانس">مقاطعة</option>
+            <option value="(Google Wallet)جوجل والت">مقاطعة</option>
+            <option value="(Google Pay)جوجل بي">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Express)جوجل إكسبريس">مقاطعة</option>
+            <option value="(Google Store)جوجل ستور">مقاطعة</option>
+            <option value="(Google Pay Send)جوجل بي سند">مقاطعة</option>
+            <option value="(Google Search)جوجل سيرش">مقاطعة</option>
+            <option value="(Google Shopping)جوجل شوبينج">مقاطعة</option>
+            <option value="(Google Flights)جوجل فلايتس">مقاطعة</option>
+            <option value="(Google Hotel Search)جوجل هوتل سيرش">مقاطعة</option>
+            <option value="(Google Trips)جوجل تريبس">مقاطعة</option>
+            <option value="(Google My Business)جوجل ماي بزنس">مقاطعة</option>
+            <option value="(Google Cloud Platform)جوجل كلاود بلاتفورم">مقاطعة</option>
+            <option value="(Google Developers)جوجل ديفلوبرز">مقاطعة</option>
+            <option value="(Google Play)جوجل بلاي">مقاطعة</option>
+            <option value="(Google Play Books)جوجل بلاي بوكس">مقاطعة</option>
+            <option value="(Google Play Games)جوجل بلاي جيمز">مقاطعة</option>
+            <option value="(Google Play Movies & TV)جوجل بلاي موفيز أند تي في">مقاطعة</option>
+            <option value="(Google Play Music)جوجل بلاي ميوزيك">مقاطعة</option>
+            <option value="(Google Play Newsstand)جوجل بلاي نيوزستاند">مقاطعة</option>
+            <!-- الغير مقاطعة -->
+            <option value="(Bazooka)بازوكا">غير مقاطعة</option>
+            <option value="(Sinacola)سيناكولا">غير مقاطعة</option>
+            <option value="(Big chips)بيج شيبس">غير مقاطعة</option>
+            <option value="(Misr Cafe)مصر كافية">غير مقاطعة</option>
+            <option value="(Juhayna)جهينة">غير مقاطعة</option>
+            <option value="(Abu Auf)ابو عوف">غير مقاطعة</option>
+            <option value="(Lambada)لمبادا">غير مقاطعة</option>
+            <option value="(Marbella)ماربيلا">غير مقاطعة</option>
+          </datalist>
+        </form>
+
+        <div class="text-end">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- شريط الnav -->
+
+
+
+<div class="container" >
+    <Div class="h2 text-center p-3"><h2 style="color: white;">منتجات المقاطعة</h2></Div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+<!-- نسكافية -->
+      <div class="col-sm-12 col-md-6 col-lg-4" >
+        <div class="card h-100">
+          <img src="g9EtiLKlmZKLmr0bAGUF1y1cd9nDT9IrP2Pc10Au.png" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+          <div class="card-body">
+            <h5 class="card-title text-right" style="text-align: right;"> (Nescafe)نسكافيه</h5>
+                  <p class="card-text" style="text-align: right;">نسكافيه هي ماركة قهوة من صنع شركة نستله حيث تم إنشاء شركة نستله عام 1866 ميلاديًا في سويسرا </p>
+                  <hr class="my-4">
+                  <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+                  <p class="card-text" style="text-align: right;">حيث قامت بشراء نسبة 51% من أسهم شركة استثمارية إسرائيلية متخصصة في مجال تصنيع وتوزيع منتجات غذائية في الأسواق المحلية والعالمية</p>
+          </div>
+        </div>
+      </div>
+
+<!-- نسكافية -->
+
+    
+    <!-- ستاربكس -->
+      <div class="col-sm-12 col-md-6 col-lg-4">
+        <div class="card h-100" >
+          <img src="2023_1_12_15_51_12_624.jpg" class="card-img-top" alt="..." style="margin: auto;width: 270px; padding: 53px 0;">
+          <div class="card-body">
+            <h5 class="card-title text-right" style="text-align: right;">(Starbucks)ستاربكس</h5>
+                  <p class="card-text" style="text-align: right;">  هي شركة مقاهي أمريكية، بدأت عام 1971 في سياتل بولاية واشنطن على يد ثلاثة شركاء وهم مدرس اللغة الإنجليزية جيري بالدوين ومدرس التاريخ (زيف سايغل) والكاتب (غوردان بوكر)</p>
+                  <hr class="my-4">
+                  <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+                  <p class="card-text" style="text-align: right;">بسبب دعمها الواضح لإسرائيل منذ بداية الحرب</p>
+          </div>
+        </div>
+      </div>
+
+    <!-- ستاربكس -->
+
+
+
+
+<!-- ديري ميلك -->
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card h-100" >
+        <img src="61Iy5XrzC-L._SL1500_.jpg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+        <div class="card-body">
+          <h5 class="card-title text-right" style="text-align: right;"> (Dairy Milk)ديري ميلك</h5>
+                <p class="card-text" style="text-align: right;">هي احد منتجات شركة كادبوري وهي شركة بريطانية لصناعة الحلوى مقرها الرئيسي في أوكسبريدج، لندن المملكة المتحدة وهي ثاني أكبر شركة لصناعة الحلويات بعد شركة مارس وكانت تعرف باسم شركة «كادبوري شويبس بي إل سي» منذ عام 1969 حتى مايو 2008</p>
+                <hr class="my-4">
+                <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+                <p class="card-text" style="text-align: right;">بسبب انها تدفع لبريطانية من الضرائب مبالغ طائلة التي تستخدم بريطانية منها ومن الأموال التي لديها لتسليح إسرائيل تلك الدولة التي كانت السبب الرئيسي في نشوء دولة إسرائيل في فلسطين</p>
+        </div>
+      </div>
+    </div>
+<!-- ديري ميلك -->
+
+
+
+
+<!-- ليبتون -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="6221048720673_Lipton-Yellow-Label-Tea-Dust-100g-3a18c806-11d3-42c5-b594-c90faf86f4ea.jpg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Lipton)شاي ليبتون</h5>
+            <p class="card-text" style="text-align: right;"> هي علامة تجارية بريطانية مشهورة للشاي في العالم مملوكة لشركة يونيليفر لدى ليبتون سلسلة متاجر في المملكة المتحدة تم بيعها لاحقًا لشركة أرجيل فود وبعد ذلك اتجهت الشركة لمبيعات الششاي فقط</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;">تعدّ لَيبتون من الشركات الداعمة لإسرائيل فهي شركة ذات أصول بريطانية ومن المعروف وقوف بريطانيا منذ الأزل إلى جانب إسرَائيل في عدوانها</p>
+    </div>
+  </div>
+</div>
+
+<!-- ليبتون -->
+
+
+
+
+<!-- شويبس -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="تنزيل.jpg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Schweppes) شويبس </h5>
+            <p class="card-text" style="text-align: right;"> هي أقدم شركات المشروبات الغازية في العالم تأسست شويبس في عام 1783 في جينيف لصاحبها جوهان شويب وتعد واحدة من أشهر المشروبات الغازية حول العالم</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;">تعدّ لَيبتون من الشركات الداعمة لإسرائيل فهي شركة ذات أصول بريطانية ومن المعروف وقوف بريطانيا منذ الأزل إلى جانب إسرَائيل في عدوانها</p>
+    </div>
+  </div>
+</div>
+
+<!-- شويبس -->
+
+
+
+<!-- بيبسي -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="f132784232447481773125-1.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Pepsi) بيبسي </h5>
+            <p class="card-text" style="text-align: right;">هو مشروب غازي مكربن تصنعه شركة بيبسيكو ويرجع إنشاؤه وتطويره في الأصل إلى عام 1893 على يد الصيدلاني كاليب برادهام، الذي قدَّمه باسم برادز درينك</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;">بسبب انها احد منتجات شركة بيبسيكو وهي الشركة الام في الولايات المتحدة الأمريكية و من المعروف ان الولايات المتحدة هي اكبر داعم لإسرائيل</p>
+    </div>
+  </div>
+</div>
+
+<!-- بيبسي -->
+
+<!-- شيبسي -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="1700Wx1700H_618171_main.avif" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (chips) شيبسي </h5>
+            <p class="card-text" style="text-align: right;">تعد شركة شيبسي من أكبر الشركات التجارية في العالم العربي والغربي والتي تقوم في صناعة وتقديم المنتجات الغذائية من أجل الجمهور ومنها الشبسي وهي شركة امريكية متعددة الجنسيات تأسست عام1961</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;">تعد شركة شيبسي من احد الشركات الداعمة حيث ان مقرها الرئيسي يقع في نيورك ولها فروح داخل اسرائيل</p>
+    </div>
+  </div>
+</div>
+
+<!-- شيبسي -->
+
+
+<!-- اكوفينا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="613O94WlB3L.jpg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Aquafina) أكوافينا </h5>
+            <p class="card-text" style="text-align: right;">  أكوافينا هي علامة تجارية من الولايات المتحدة الأمريكية. هذه العلامة التجارية متخصصة في المياه المعبأة النقية والمنكهة وغير المنكهة    </p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;"> أكوافينا من بين المنتجات التي تمت مقاطعتها لأنها مملوكة لشركة بيبسيكو الأمريكية وتعرف هذه الشركة بمواقفها مع إسرائيل فهي الشركة التي تستحوذ على شركة صودا ستريم الإسرائيلية التي تعمل في كربنة المياه</p>
+    </div>
+  </div>
+</div>
+
+<!-- اكوفينا -->
+
+
+<!-- نوتيلا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="تنزيل (1).jpg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Nutella) نوتيلا </h5>
+            <p class="card-text" style="text-align: right;">هي علامة تجارية لمنتج من الشوكولاتة المعدّة للدهن على الخبز نوتيلا هي من منتجات شركة فيريرو الإيطالية وقد ظهرت في السوق في عام 1963</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;"> تنضم العلامة التجارية لنوتيلا إلى حملة داعمي الكيان الصهيوني حيث تبين وجود فرع لشركة فيريرو في إسرائيل في مدينة حولون وفقا للموقع الرسمي للشركة</p>
+    </div>
+  </div>
+</div>
+<!-- نوتيلا -->
+
+
+<!-- سيريلاك  -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="cerelac-honey-with-wheat-milk-with-iron-vitamins-probiotics-250-gm-01668522050.png" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (cerelac) سيريلاك </h5>
+            <p class="card-text" style="text-align: right;">سيريلاك هي علامة تجارية من حبوب القمح الفورية التي تقدمها شركة نستله للأغذيه هذه الحبوب تعد للأطفال الرضع من عمر 6 أشهر فما فوق كمكمل غذائي</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;">حيث انه تابع لشركة نستله الداعمه للكيان الصهيوني</p>
+    </div>
+  </div>
+</div>
+<!-- سيريلاك  -->
+
+
+
+<!-- ريكسونا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="1190716.avif" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Rexona)ريكسونا</h5>
+            <p class="card-text" style="text-align: right;">ريكسونا هي ماركة أسترالية لمضادات التعرق مملوكة للشركة البريطانية (يونيليفر) وبالرغم من تسويقها بأسم (ريكسونا) في أغلب الدول فهي تعرف باسم (شور) في المملكة المتحدة</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">تعود ملكية العلامة التجارية لمزيل العرق ريكسونا إلى شركة «Unilever» ويعتبر كيان الاحتلال الإسرائيل واحد من الدول التي تمارس فيها شركة «Unilever»</p>
+    </div>
+  </div>
+</div>
+<!-- ريكسونا -->
+
+
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="Nesquik_C2_AE_20Chocolate_20Powder_20302x381.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Nesquik)نسكويك</h5>
+            <p class="card-text" style="text-align: right;">ريكسونا هي ماركة أسترالية لمضادات التعرق مملوكة للشركة البريطانية (يونيليفر) وبالرغم من تسويقها بأسم (ريكسونا) في أغلب الدول فهي تعرف باسم (شور) في المملكة المتحدة</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">تعود ملكية العلامة التجارية لمزيل العرق ريكسونا إلى شركة «Unilever» ويعتبر كيان الاحتلال الإسرائيل واحد من الدول التي تمارس فيها شركة «Unilever»</p>
+    </div>
+  </div>
+</div>
+
+<!--Kit Kat-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="1.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Kit Kat)كيت كات</h5>
+            <p class="card-text" style="text-align: right;">كيت كات هو شوكولاتة شهيرة تُصنع من قبل شركة نستله. تتكون من طبقات من الويفر المقرمش مغطاة بطبقة من الشوكولاتة اللبنية الناعمة. تشتهر أصابع كيت كات بشكلها الفريد، حيث تتكون كل قطعة من أربعة أصابع منفصلة يمكن تكسيرها بسهولة وتناولها بشكل فردي</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl"> تعتبر شركة حلوى كيت كات، أمريكية الأصل، حيث تأسست في عام 1935 وتعتبر نستلة، هي الشركة الأم للمنتج</p>
+    </div>
+  </div>
+</div>
+
+<!--Kit Kat-->
+
+
+<!--Ferrero Rocher-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="2.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Ferrero Rocher)فيريرو روشيه</h5>
+            <p class="card-text" style="text-align: right;">فيريرو روشيه هو نوع من أنواع الحلويات الفرنسية الشهيرة وهي عبارة عن كرات صغيرة من الشوكولاتة المحشوة بالكريمة أو الجيليه أو الكراميل تعتبر فيريرو روشيه من الحلويات الفاخرة والمحببة للكثيرين حول العالم.</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl"> شركة فيريرو لديها مصنعا في إسرائيل ويعد هذا دعما ماليا، حيث تدفع ضرائب للدولة وجرى التأكد بالفعل من تواجد أحد مصانع فيريرو في إسرائيل</p>
+    </div>
+  </div>
+</div>
+
+<!--Ferrero Rocher-->
+
+<!-- (McDonald's)ماكدونالدز-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="4.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (McDonald's)ماكدونالدز</h5>
+            <p class="card-text" style="text-align: right;">ماكدونالدز (McDonald's) هي شركة عالمية للوجبات السريعة تأسست في عام 1940 في الولايات المتحدة الأمريكية تعتبر ماكدونالدز واحدة من أكبر سلاسل المطاعم في العالم وتقدم مجموعة متنوعة من الوجبات السريعة بما في ذلك البرغر والبطاطس المقلية والمشروبات والحلويات تشتهر ماكدونالدز بشعارها الشهير "I'm lovin' it" وتوجد فروعها في جميع أنحاء العالم</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl"> شهدت مقاطعة واحتجاجات ضدها من قبل نشطاء مناهضين لإسرائيل بعد نشر الجيش الإسرائيلي صور ومقاطع فيديو تظهر فيها منتجات من الشركة مقدمة مجاناً لأفراده </p>
+    </div>
+  </div>
+</div>
+
+<!-- (McDonald's)ماكدونالدز-->
+
+<!--(Coca-Cola)كوكاكولا-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="9.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Coca-Cola)كوكاكولا</h5>
+            <p class="card-text" style="text-align: right;">كوكا كولا هو مشروب غازي مشهور من إنتاج شركة كوكا كولا تم إنشاؤه في الأصل عام 1886 من قبل الصيدلي جون ستيث بيمبرتون ويباع الآن في أكثر من 200 دولة حول العالم تشتهر شركة كوكا كولا بعلامتها التجارية المميزة باللونين الأحمر والأبيض ومذاقها المنعش</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl"> عملية مقاطعة منتجات أجنبية (أميركية وأوروبية تحديدا) - مثل "ستاربكس" و"كوكا كولا"- بسبب حرب غزة قد عززت الطلب على المنتجات المنافسة المحلية</p>
+    </div>
+  </div>
+</div>
+
+<!--(Coca-Cola)كوكاكولا-->
+
+<!--Nestle-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="10.png" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Nestle)نستلة</h5>
+            <p class="card-text" style="text-align: right;">
+              نستله هي شركة متعددة الجنسيات للأغذية والمشروبات مقرها في سويسرا وهي واحدة من أكبر شركات الأغذية في العالم مع مجموعة واسعة من المنتجات بما في ذلك الشوكولاتة والقهوة ومنتجات الألبان والمياه المعبأة تتواجد شركة نستله في أكثر من 180 دولة وتوظف أكثر من 300000 شخص حول العالم ومن علاماتها التجارية المشهورة: نسكافيه و كيت كات و ماجي و ونيستيا</p>
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">وابلغت السلطات السورية شركة 'نستلة' بقرار المقاطعة الذي اتخذه المكتب والذي امهلها مدة سنة 'لتسوية وضعها' اي وقف انشطتها في اسرائيل</p>
+    </div>
+  </div>
+</div>
+
+<!--Nestle-->
+
+
+<!--kiri-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="11.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (kiri)كيري</h5>
+            <p class="card-text" style="text-align: right;">كيري هو نوع من الجبن الطري الكريمي الذي نشأ في نيوزيلندا لها نكهة خفيفة ومنعشة قليلاً وملمس ناعم وقابل للدهن. غالبًا ما يستخدم جبن كيري كمواد دهنية على الخبز أو البسكويت أو كحشوة للمعجنات والمخبوزات الأخرى كما أنه يستخدم بشكل شائع في الطبخ والخبز لإضافة قوام كريمي ونكهة خفيفة إلى الأطباق </p>
+           
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">جبنة كيري مقاطعة: لأنها من إنتاج شركة فرنسية ضمن مجموعة بيل سنة 1966</p>
+    </div>
+  </div>
+</div>
+
+<!--kiri-->
+
+
+<!--doritos-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="14.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (doritos)دوريتس</h5>
+            <p class="card-text" style="text-align: right;">دوريتوس هي علامة تجارية مشهورة لرقائق التورتيا المنكهة التي تنتجها شركة فريتو لاي. أنها تأتي في مجموعة متنوعة من النكهات ومعروفة بمذاقها الجريء والمكثف. غالبًا ما يتم الاستمتاع بالدوريتوس كوجبة خفيفة بمفردها أو يتم استخدامها كعنصر في وصفات مثل سلطة الناتشوز أو التاكو </p>
+           
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">  الشركة الأم بيبسيكو الأمريكية مستحوذة على شركة سوداستريم الاسرائيلية لكربنة الماء</p>
+    </div>
+  </div>
+</div>
+
+<!--doritos-->
+
+
+<!--KFC-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="13.png" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (KFC)كنتاكي</h5>
+            <p class="card-text" style="text-align: right;">(Kentucky Fried Chicken) هي سلسلة مطاعم للوجبات السريعة تقدم الدجاج المقلي وتأسست في الولايات المتحدة. ليس لدي معلومات حول امتلاك شركة PepsiCo الأمريكية لشركة SodaStream الإسرائيلية لتكرير المياه. يمكنك التحقق من المصادر الموثوقة للتأكد من الدقة الكاملة لهذه المعلومة </p>
+           
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">وبعتبر كنتاكي من المطاعم التي تدعم إسرائيل والتي تواجدت بين الشركات الداعمة للكيان الصهيوني</p>
+    </div>
+  </div>
+</div>
+
+<!--KFC-->
+
+
+<!--lion-->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="12.jpeg" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (lion)ليون</h5>
+            <p class="card-text" style="text-align: right;">شبسي لايون هو علامة تجارية مصرية مشهورة للشبسي والوجبات الخفيفة تأسست في مصر وتقدم مجموعة متنوعة من النكهات والأصناف من الشبسي تعتبر شبسي لايون منتجًا شهيرًا وشائعًا في السوق المصرية ويحظى بشعبية كبيرة بين المستهلكين </p>
+           
+            <hr class="my-4">
+            <h6 class="card-text" style="text-align: right;" > :سبب وجودها في المقاطعة</h6>
+            <p class="card-text" style="text-align: right;" dir="rtl">يعتبر شيبسي ليون، أحد منتجات شركة ليدر فودز التابعة لشركة سنيوريتا للصناعات الغذائية</p>
+    </div>
+  </div>
+</div>
+
+<!--lion-->
+
+
+</div>
+
+
+
+
+
+
+
+
+<!--بدائل المقاطعة -->
+            <hr class="my-4">
+
+  <Div class="h2 text-center p-3"><h2 style="color: white;">بديل المقاطعة</h2></Div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+
+
+<!-- ابو عوف -->
+    <div class="col-sm-12 col-md-6 col-lg-4">
+      <div class="card h-100" >
+        <img src="f132785062266960399019-1.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+        <div class="card-body">
+          <h5 class="card-title text-right" style="text-align: right;"> (Abu Auf)ابو عوف</h5>
+                <p class="card-text" style="text-align: right;" > يرجع تاريخ تأسيس شركة أبو عوف إلى عام 1976 م أي أنها تتميز بخبرة كبيرة في عالم صناعة القهوة ومن أسباب شهرتها أيضًا أنها تلبي رغبات المستخدمين من خلال تقديم أعلى جودة بأفضل سعر بالإضافة إلى وجود أكثر من حجم للعبوة وتفاوت في الأسعار حتى يمكنك أن تختار ما يتناسب مع استخدامك  </p>
+                <hr class="my-4">
+        </div>
+      </div>
+    </div>
+<!-- ابو عوف -->
+
+
+<!-- مصر كافية -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="Misr-Cafe-Instant-Coffee-Original-100-g-1.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Misr Cafe)مصر كافية</h5>
+            <p class="card-text" style="text-align: right;" >نشأت شركة "مصر كافيه" كشركة مساهمة عام 1984 لإنتاج وتصدير القهوة سريعة الذوبان والقهوة المحمصة سريعة التحضير، بالإضافة لمنتجات أخرى سريعة التحضير كإضافات القهوة والقهوة التركي والقهوة العربي والشاي والبابونج والعرقسوس والكركديه والكابتشينو</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- مصر كافية -->
+
+
+
+<!-- بيج شيبس -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="6223000504383_-_47_-_57g-1.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Big chips)بيج شيبس</h5>
+            <p class="card-text" style="text-align: right;" >تجارية تابعة لشركة «إيجيبت فودز» المعروفة بإنتاج مختلف السلعة الغذائية في السوق المصري مثل شيبسي تايجر، وقلبظ، وكونو، وكريزو، وجيرو،و ستار، وويزو، وشوكو شوتس، وراسكي</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- بيج شيبس -->
+
+
+<!-- بازوكا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="s-1589288337544117.png" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Bazooka)بازوكا</h5>
+            <p class="card-text" style="text-align: right;" >بدأت رحلة عمل مطاعم بازوكا في مصر أواخر عام 2018  بافتتاح مطاعم وجبات سريعة بهدف أن نكون علامة مصرية وطنية، و بفكر متميز يضاهي و ينافس أقوى العلامات التجارية العالمية في قطاع المطاعم في عالم الفرايد تشيكن</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- بازوكا -->
+
+
+<!-- سيناكولا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="Sinacola-Extra-Green-Apple-Soft-Drink-1-L-1.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Sinacola)سيناكولا</h5>
+            <p class="card-text" style="text-align: right;" > تأسست شركة سينما كولا للمشروبات الغازية في عام 2008 وأصبحت من الماركات المشهورة للجميع ومع بدء حملة مقاطعة المنتجات العالمية ودعم القضية الفلسطينية لجاء الكثير إلى الصناعة المحلية ومن ضمنها شركة سينا كولا وهي شركة مصرية </p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- سيناكولا -->
+
+<!-- جهينة -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="elaosboa85743.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Juhayna)جهينة</h5>
+            <p class="card-text" style="text-align: right;" >جهينة للصناعات الغذائية هي شركة مصرية تأسست عام 1983 وبدأت نشاطها لإنتاج الألبان والزبادي والعصائر في أبريل 1987 برأس مال 1.3 مليون جنيه</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- جهينة -->
+
+
+
+
+
+<!-- شمعدان -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="480Wx480H_456884_main.avif" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (El Shamadan)الشمعدان</h5>
+            <p class="card-text" style="text-align: right;" >بسكويت "الشمعدان" والذي بدأ إنتاجه عام 1984 وكان أكثر أنواع البسكويت انتشارًا في السوق المصرية</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- شمعدان -->
+
+
+<!-- لمبادا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="412.png-550x550w.png.webp" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Lambada)لمبادا</h5>
+            <p class="card-text" style="text-align: right;" > بسكويت لمبادا من إنتاج شركة اوشن فودز وهي شركة مصرية 100% وليس لها علاقة من قريب أو بعيد بإسرائيل، بل إنها من داعمي القضية الفلسطينية بقوة</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- لمبادا -->
+
+
+
+
+<!-- مربيلا -->
+<div class="col-sm-12 col-md-6 col-lg-4">
+  <div class="card h-100" >
+    <img src="images.png" class="card-img-top" alt="..." style="margin: auto;width: 270px;">
+    <div class="card-body">
+      <h5 class="card-title text-right" style="text-align: right;"> (Marbella)ماربيلا</h5>
+            <p class="card-text" style="text-align: right;" >تأسست شركة ماربيلا للصناعات الغذائية عام 1993، وهي شركة مصرية برأس مال مصري تتخصص في إنتاج وتعبئة مجموعة متنوعة من منتجات الحلويات</p>
+            <hr class="my-4">
+    </div>
+  </div>
+</div>
+<!-- مربيلا -->
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="href" >
+  <a href="#" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">اذا كان هناك منتج ناقص قم بالتواصل معانا</a>
+</div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">قم بأدخال بيانات عن المنتج الناقص</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" style="padding: 0px;">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <div class="col-md-7 col-lg-8" dir="rtl">
+            <form class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="firstName" class="form-label">اسم المنتج </label>
+                  <input type="text" class="form-control" id="first" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    يرجى إدخال اسم  المنتج.
+                  </div>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">اسم الشركة المصنعة له</label>
+                  <input type="text" class="form-control" id="last" placeholder="" value="" required>
+                  <div class="invalid-feedback">
+                    يرجى إدخال اسم الشركة المصنعة له .
+                  </div>
+                </div>
+
+                <div class="col-sm-12">
+                  <label for="">قم بأرسال اي بيانات اخري ان اوجد:</label>
+                  <input type="text" class="form-control" id="other" style="margin: 20px; height: 90px;">
+                </div>
+                <button type="button" class="btn btn-warning" id="liveToastBtn" onclick="sendEmailOnClick()">ارسال</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">اغلاق</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model -->
+
+<!-- toasts -->
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">اكتمل</strong>
+      <small>منذ لحظات..</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      تم ارسال طلبك وسيتم المراجعة في اقرب وقت
+    </div>
+  </div>
+</div>
+
+<!-- toasts -->
+
+
+
+
+
+
+<!-- 384BD14D624D1609F0F147D15EB4F0618669 -->
+
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap.js"></script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="package.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="snippets.js"></script>
+
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+     function sendEmailOnClick() {
+    Email.send({
+      SecureToken: "3406676e-ac36-44ba-902f-d8c314f161c7",
+      To: 'sherifeslam112@gmail.com',
+      From: "sherifeslam112@gmail.com",
+      Subject: "منتج جديد ضمن المقاطعة",
+      Body: "اسم المنتج: " + document.getElementById("first").value +
+        "<br>" + "اسم الشركة المصنعة: " + document.getElementById("last").value +
+        "<br>" + "معلومات اخري: " + document.getElementById("other").value
+    }).then(
+      message => alert("تم الأرسال بنجاح")
+    );
+  }
+  </script>
+</body>
+</html>
